@@ -4,7 +4,7 @@ if (NOT TARGET sdsl_lite::sdsl)
     FetchContent_Declare(
             sdsl_lite
             GIT_REPOSITORY https://github.com/AdrianRiedl/sdsl-lite.git
-            GIT_TAG        "f7cdddedae1acb05d849ef151966658ceec29b3a"
+            GIT_TAG        master
     )
 
     FetchContent_MakeAvailable(sdsl_lite)
