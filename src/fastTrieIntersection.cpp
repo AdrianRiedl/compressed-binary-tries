@@ -17,7 +17,7 @@
 
 using namespace std;
 
-vector<uint64_t> forceBruteIntersection(vector<vector<uint64_t>> &S){
+vector<uint64_t> forceBruteIntersection_fastTrieIntersection(vector<vector<uint64_t>> &S){
     sort(S.begin(), S.end(),
          [](const vector<uint64_t> &a, const vector<uint64_t> &b){
             return a.size() < b.size();
