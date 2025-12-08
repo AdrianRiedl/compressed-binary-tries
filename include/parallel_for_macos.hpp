@@ -1,3 +1,4 @@
+#pragme once
 #include <algorithm>
 #include <thread>
 #include <functional>
