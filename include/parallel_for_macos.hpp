@@ -39,7 +39,7 @@ CPU_SET(int num, cpu_set_t *cs) { cs->count |= (1 << num); }
 static inline int
 CPU_ISSET(int num, cpu_set_t *cs) { return (cs->count & (1 << num)); }
 
-
+namespace {
 int sched_getaffinity(pid_t pid, size_t cpu_size, cpu_set_t *cpu_set)
 {
   //int32_t core_count = 0;
@@ -72,6 +72,7 @@ int pthread_setaffinity_np(pthread_t thread, size_t cpu_size,
   //thread_policy_set(mach_thread, THREAD_AFFINITY_POLICY,
   //                  (thread_policy_t)&policy, 1);
   return 0;
+}
 }
 
 static
